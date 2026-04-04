@@ -10,7 +10,7 @@ export default function Info() {
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
           <img
-            src="/arcana-logo.PNG"
+            src="/arcana-logo.avif"
             alt="Arcana logo"
             className="mx-auto w-full max-w-xl sm:max-w-2xl md:max-w-3xl"
           />
