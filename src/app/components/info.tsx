@@ -301,7 +301,7 @@ export default function Info() {
                     How is student safety handled?
                   </p>
                   <p className="mt-2 max-w-3xl leading-7 text-gray-500">
-                    [Add supervision details, emergency contact flow, and check-in protocol.]
+                    its not
                   </p>
                 </div>
                 <div className="border-b border-gray-100 pb-5">
