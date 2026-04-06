@@ -12,17 +12,9 @@ export default function Info() {
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
-    <section className={`${sourceSerif.className} px-6 py-24 sm:px-10 lg:px-16`}>
+    <section className={`${sourceSerif.className} bg-[#1b3364] px-6 py-24 sm:px-10 lg:px-16`}>
       <div className="mx-auto max-w-7xl">
-        <div className="mx-auto max-w-3xl text-center">
-          <img
-            src="/arcana-logo.avif"
-            alt="Arcana logo"
-            className="mx-auto w-full max-w-xl sm:max-w-2xl md:max-w-3xl"
-          />
-        </div>
-
-        <nav className="mt-16 flex flex-wrap items-center justify-center gap-x-2 gap-y-6 text-center" aria-label="Info sections">
+        <nav className="mt-16 flex flex-wrap items-center justify-center gap-x-2 gap-y-6 text-center pt-0" aria-label="Info sections">
           <button
             type="button"
             onClick={() => setActiveTab("overview")}
@@ -141,7 +133,7 @@ export default function Info() {
           {activeTab === "overview" && (
             <div className="space-y-10">
               <h3
-                className="text-3xl font-black tracking-tight text-gray-800 sm:text-4xl"
+                className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
                 style={{ fontFamily: '"Arcane Nine", serif' }}
               >
                 Overview
@@ -154,7 +146,7 @@ export default function Info() {
                   >
                     What is Arcana?
                   </p>
-                  <p className="mt-4 max-w-4xl leading-8 text-gray-600 sm:text-lg">
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
                     This July, 100+ teen hackers from all around the world will gather in Singapore for a 3-day long hackathon Horizons Arcana. Arcana is being organised by Hack Club, Hack Club is a 
                     501(c)(3) nonprofit that helps over 50,000 high school makers all around the world.
                     <br />
@@ -185,7 +177,7 @@ export default function Info() {
                       <svg viewBox="0 0 24 24" aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 rotate-6 text-white">
                         <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
                         <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
-                      </svg>
+                      </svg>    
                       <span><a href="https://www.youtube.com/watch?v=fuTlToZ1SX8&t=5s" className="event-link">Juice</a> - A 2-month long game jam followed by a week long popup cafe in Shanghai!</span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -357,7 +349,7 @@ export default function Info() {
 
       <style jsx>{`
         .event-link {
-          color: #f9b6ff;
+          color: #f9b6ff;   
           font-weight: 700;
           text-decoration-line: underline;
           text-decoration-style: dotted;
