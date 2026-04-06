@@ -9,7 +9,7 @@ export default function LenisProvider({ children }: PropsWithChildren) {
       root
       options={{
         lerp: 0.08,
-        duration: 1.2,
+        duration: 1.1,
         smoothWheel: true,
       }}
     >
