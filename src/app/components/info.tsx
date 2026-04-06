@@ -279,77 +279,44 @@ export default function Info() {
 
           {activeTab === "travel" && (
             <div className="space-y-10">
-              <h3
-                className="text-3xl font-black tracking-tight text-gray-800 sm:text-4xl"
-                style={{ fontFamily: '"Arcane Nine", serif' }}
+                          <h3
+                className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
+
               >
-                Travel
+                Travel Stipends
               </h3>
-              <p className="max-w-4xl text-base leading-8 text-gray-600 sm:text-lg">
-                How attendees can get there comfortably.
-              </p>
-              <div className="space-y-10">
                 <div className="border-b border-gray-100 pb-8">
-                  <p
-                    className="text-base font-bold text-purple-600 sm:text-lg"
-                    style={{ fontFamily: '"Arcane Nine", serif' }}
-                  >
-                    How do I reach the venue?
-                  </p>
-                  <p className="mt-4 max-w-4xl leading-8 text-gray-600 sm:text-lg">
-                    [Add transit routes, parking notes, and nearest landmarks.]
-                  </p>
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
+                    Our aim is to make this event accessible to everyone regardless of their financial or geographical background, so we will be providing travel stipends. You can get travel stipends by working extra hours over the event requirement- you can buy travel stipends from the Horizons shop at a rate of X$ for every X hours spent.  <br />
+                    </p>
                 </div>
-                <div className="border-b border-gray-100 pb-8">
-                  <p
-                    className="text-base font-bold text-purple-600 sm:text-lg"
-                    style={{ fontFamily: '"Arcane Nine", serif' }}
+                    <p
+                    className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
                   >
-                    Any accommodation support?
+                    Flying in and out of Singapore
                   </p>
-                  <p className="mt-4 max-w-4xl leading-8 text-gray-600 sm:text-lg">
-                    [Add stay options, partner hotels, and accessibility travel notes.]
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+Singapore has only one main airport- Singapore Changi. You can request a staff pickup from the airport, if you do- staff will receive you and escort you to the venue. We will put out a form as we move closer to the event to request a staff pickup. 
+More details regarding when to fly in and out will be announced as we move closer to the event.
                   </p>
-                </div>
-              </div>
             </div>
           )}
 
           {activeTab === "parents" && (
             <div className="space-y-10">
-              <h3
-                className="text-3xl font-black tracking-tight text-gray-800 sm:text-4xl"
-                style={{ fontFamily: '"Arcane Nine", serif' }}
+                          <h3
+            className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
+
               >
-                For Parents
+                Parent's Guide
               </h3>
-              <p className="max-w-4xl text-base leading-8 text-gray-600 sm:text-lg">
-                Important context for guardians and family.
-              </p>
-              <div className="space-y-10">
                 <div className="border-b border-gray-100 pb-8">
-                  <p
-                    className="text-base font-bold text-purple-600 sm:text-lg"
-                    style={{ fontFamily: '"Arcane Nine", serif' }}
-                  >
-                    How is student safety handled?
-                  </p>
-                  <p className="mt-4 max-w-4xl leading-8 text-gray-600 sm:text-lg">
-                    its not
-                  </p>
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
+                    We understand sending their kid to a different country brings a lot of concerns for the parents and we totally respect them. Safety and well-being of the participants is our utmost priority and there will be no compromises with that.
+                    <br />
+                   For details, you can read our parent's guide <a className="event-link">here</a>!
+                    </p>
                 </div>
-                <div className="border-b border-gray-100 pb-8">
-                  <p
-                    className="text-base font-bold text-purple-600 sm:text-lg"
-                    style={{ fontFamily: '"Arcane Nine", serif' }}
-                  >
-                    How can parents stay informed?
-                  </p>
-                  <p className="mt-4 max-w-4xl leading-8 text-gray-600 sm:text-lg">
-                    [Add communication channels, live updates, and pickup instructions.]
-                  </p>
-                </div>
-              </div>
             </div>
           )}
         </div>
