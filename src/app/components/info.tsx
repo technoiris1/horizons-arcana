@@ -179,35 +179,21 @@ export default function Info() {
                         <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
                         <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
                       </svg>
-                      <span>[Event Name 1]</span>
+                      <span><a href="https://overglade.hackclub.com/" className="event-link">Overglade</a> - A 4-day long Game Jam in Singapore!</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <svg viewBox="0 0 24 24" aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 rotate-6 text-white">
                         <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
                         <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
                       </svg>
-                      <span>[Event Name 2]</span>
+                      <span><a href="https://www.youtube.com/watch?v=fuTlToZ1SX8&t=5s" className="event-link">Juice</a> - A 2-month long game jam followed by a week long popup cafe in Shanghai!</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <svg viewBox="0 0 24 24" aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 -rotate-12 text-white">
                         <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
                         <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
                       </svg>
-                      <span>[Event Name 3]</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg viewBox="0 0 24 24" aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 rotate-12 text-white">
-                        <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
-                        <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
-                      </svg>
-                      <span>[Event Name 4]</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <svg viewBox="0 0 24 24" aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 -rotate-6 text-white">
-                        <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
-                        <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
-                      </svg>
-                      <span>[Event Name 5]</span>
+                      <span><a className="event-link">Undercity</a> - A 4-day long hardware hackathon at Github HQ, in San Francisco!</span>
                     </li>
                   </ul>
                 </div>
@@ -370,6 +356,30 @@ export default function Info() {
       </div>
 
       <style jsx>{`
+        .event-link {
+          color: #f9b6ff;
+          font-weight: 700;
+          text-decoration-line: underline;
+          text-decoration-style: dotted;
+          text-decoration-color: rgba(249, 182, 255, 0.95);
+          text-decoration-thickness: 2px;
+          text-underline-offset: 0.22em;
+          transition: color 180ms ease, text-decoration-color 180ms ease, background-color 180ms ease;
+        }
+
+        .event-link:hover {
+          color: #ffd7ff;
+          text-decoration-style: wavy;
+          text-decoration-color: rgba(255, 215, 255, 0.98);
+          background-color: rgba(255, 255, 255, 0.08);
+        }
+
+        .event-link:focus-visible {
+          outline: 2px dashed rgba(255, 215, 255, 0.95);
+          outline-offset: 3px;
+          border-radius: 0.25rem;
+        }
+
         @keyframes slideIn {
           from {
             opacity: 0;
