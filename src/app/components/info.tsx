@@ -1,26 +1,26 @@
 "use client";
 
 import { useState } from "react";
-import { Source_Serif_4 } from "next/font/google";
+import { Averia_Serif_Libre } from "next/font/google";
 
-const sourceSerif = Source_Serif_4({
+const averiaSerif = Averia_Serif_Libre({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: [ "700"],
 });
 
 export default function Info() {
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
-    <section className={`${sourceSerif.className} bg-[#1b3364] px-6 py-24 sm:px-10 lg:px-16`}>
+    <section className={`${averiaSerif.className} bg-[#1b3364] px-6 pt-0 pb-24 sm:px-10 lg:px-16`}>
       <div className="mx-auto max-w-7xl">
-        <nav className="mt-16 flex flex-wrap items-center justify-center gap-x-2 gap-y-6 text-center pt-0" aria-label="Info sections">
+        <nav className="mt-0 flex flex-wrap items-center justify-center gap-x-2 gap-y-6 text-center pt-0" aria-label="Info sections">
           <button
             type="button"
             onClick={() => setActiveTab("overview")}
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
-              activeTab === "overview" ? "font-bold text-violet-600" : "text-gray-500 hover:text-indigo-500"
+              activeTab === "overview" ? "font-bold text-[#f9b6ff]" : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
             Overview
@@ -28,7 +28,7 @@ export default function Info() {
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
-            className="mx-4 h-7 w-7 -rotate-12 select-none text-white"
+            className="mx-4 h-7 w-7 -rotate-12 select-none text-white translate-y-[0.5px]"
           >
             <path
               d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z"
@@ -45,7 +45,7 @@ export default function Info() {
             onClick={() => setActiveTab("details")}
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
-              activeTab === "details" ? "font-bold text-violet-600" : "text-gray-500 hover:text-indigo-500"
+              activeTab === "details" ? "font-bold text-[#f9b6ff]" : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
             Event Details
@@ -53,7 +53,7 @@ export default function Info() {
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
-            className="mx-4 h-7 w-7 rotate-6 select-none text-white"
+            className="mx-4 h-7 w-7 rotate-6 select-none text-white translate-y-[0.5px]"
           >
             <path
               d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z"
@@ -71,8 +71,8 @@ export default function Info() {
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
               activeTab === "qualification"
-                ? "font-bold text-violet-600"
-                : "text-gray-500 hover:text-indigo-500"
+                ? "font-bold text-[#f9b6ff]"
+                : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
             Qualification
@@ -80,7 +80,7 @@ export default function Info() {
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
-            className="mx-4 h-7 w-7 -rotate-6 select-none text-white"
+            className="mx-4 h-7 w-7 -rotate-6 select-none text-white translate-y-[0.5px]"
           >
             <path
               d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z"
@@ -97,7 +97,7 @@ export default function Info() {
             onClick={() => setActiveTab("travel")}
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
-              activeTab === "travel" ? "font-bold text-violet-600" : "text-gray-500 hover:text-indigo-500"
+              activeTab === "travel" ? "font-bold text-[#f9b6ff]" : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
             Travel
@@ -105,7 +105,7 @@ export default function Info() {
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
-            className="mx-4 h-7 w-7 rotate-12 select-none text-white"
+            className="mx-4 h-7 w-7 rotate-12 select-none text-white translate-y-[0.5px]"
           >
             <path
               d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z"
@@ -122,7 +122,7 @@ export default function Info() {
             onClick={() => setActiveTab("parents")}
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
-              activeTab === "parents" ? "font-bold text-violet-600" : "text-gray-500 hover:text-indigo-500"
+              activeTab === "parents" ? "font-bold text-[#f9b6ff]" : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
             For Parents
@@ -134,19 +134,13 @@ export default function Info() {
             <div className="space-y-10">
               <h3
                 className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
-                style={{ fontFamily: '"Arcane Nine", serif' }}
+
               >
-                Overview
+                What is Arcana?
               </h3>
               <div className="space-y-10">
                 <div className="border-b border-gray-100 pb-8">
-                  <p
-                    className="text-base font-bold text-purple-600 sm:text-lg"
-                    style={{ fontFamily: '"Arcane Nine", serif' }}
-                  >
-                    What is Arcana?
-                  </p>
-                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
                     This July, 100+ teen hackers from all around the world will gather in Singapore for a 3-day long hackathon Horizons Arcana. Arcana is being organised by Hack Club, Hack Club is a 
                     501(c)(3) nonprofit that helps over 50,000 high school makers all around the world.
                     <br />
@@ -155,39 +149,73 @@ export default function Info() {
                 </div>
                 <div className="border-b border-gray-100 pb-8">
                   <p
-                    className="text-base font-bold text-purple-600 sm:text-lg"
-                    style={{ fontFamily: '"Arcane Nine", serif' }}
+                    className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
                   >
                     What is Hack Club?
                   </p>
-                  <p className="mt-4 max-w-4xl leading-8 text-gray-600 sm:text-lg">
-                    Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn to code and build projects. We’re the largest teen-led coding community, with over 50,000 students building projects with their friends in Hack Club each year.
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                    Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn to code and build projects. We’re the largest teen-led coding community, with over 50,000 students building projects with their friends in Hack Club each year. You can learn more about Hack Club at <a href="https://hackclub.com" target="_blank" className="event-link"> hackclub.com</a>!
                     <br />
                     Some of the past events we've run are-
                   </p>
-                  <ul className="mt-5 space-y-3 text-gray-600 sm:text-lg">
-                    <li className="flex items-start gap-3">
-                      <svg viewBox="0 0 24 24" aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 -rotate-6 text-white">
+                  <ul className="mt-5 space-y-3 text-[#6cc7ec] sm:text-lg">
+                    <li className="flex items-center gap-3">
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 shrink-0 -rotate-6 text-white translate-y-[0.5px]">
                         <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
                         <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
                       </svg>
-                      <span><a href="https://overglade.hackclub.com/" className="event-link">Overglade</a> - A 4-day long Game Jam in Singapore!</span>
+                      <span><a href="https://overglade.hackclub.com/" className="event-link" target="_blank">Overglade</a> - A 4-day long Game Jam in Singapore!</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <svg viewBox="0 0 24 24" aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 rotate-6 text-white">
+                    <li className="flex items-center gap-3">
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 shrink-0 rotate-6 text-white translate-y-[0.5px]">
                         <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
                         <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
                       </svg>    
-                      <span><a href="https://www.youtube.com/watch?v=fuTlToZ1SX8&t=5s" className="event-link">Juice</a> - A 2-month long game jam followed by a week long popup cafe in Shanghai!</span>
+                      <span><a href="https://www.youtube.com/watch?v=fuTlToZ1SX8&t=5s" target="_blank" className="event-link">Juice</a> - A 2-month long game jam followed by a week long popup cafe in Shanghai!</span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <svg viewBox="0 0 24 24" aria-hidden="true" className="mt-1 h-4 w-4 shrink-0 -rotate-12 text-white">
+                    <li className="flex items-center gap-3">
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 shrink-0 -rotate-12 text-white translate-y-[0.5px]">
                         <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
                         <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
                       </svg>
-                      <span><a className="event-link">Undercity</a> - A 4-day long hardware hackathon at Github HQ, in San Francisco!</span>
+                      <span><a className="event-link" href="https://youtu.be/kaEFv7e49mo?si=3cqsRI02dbSHf5bu" target="_blank">Undercity</a> - A 4-day long hardware hackathon at Github HQ, in San Francisco!</span>
                     </li>
                   </ul>
+                </div>
+                <div className="border-b border-gray-100 pb-8">
+                  <p
+                    className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+                  >
+                    What is Horizons?
+                  </p>
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                   Horizons is a group of 7 Hack Club flagship hackathons taking place in all the continents(except Antarctica ofc), Arcana is the Horizons event in Singapore, Asia. <br />Read more about Horizons at <a href="https://horizons.hackclub.com" className="event-link" target="_blank">horizons.hackclub.com</a>!                    </p>
+                </div>
+                <div className="border-b border-gray-100 pb-8">
+                  <p
+                    className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+                  >
+                    Can I participate?
+                  </p>
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                    Yes, you can as long as you meet the requirements mentioned below-
+                    <ul className="mt-5 space-y-3 text-[#6cc7ec] sm:text-lg">
+                    <li className="flex items-center gap-3">
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 shrink-0 -rotate-6 text-white translate-y-[0.5px]">
+                        <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
+                        <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
+                      </svg>
+                      <span>You're above 13 and under 18 years of age.</span>
+                    </li>
+                    <li className="flex items-center gap-3">
+                      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 shrink-0 rotate-6 text-white translate-y-[0.5px]">
+                        <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
+                        <path d="M12.3 3.3L14.6 8.4L19 10L15.3 13.3L15.9 18.2L12.1 16L8 18.6L8.6 13.6L4.8 10L9.5 8.6L12.3 3.3Z" fill="currentColor" opacity="0.75" />
+                      </svg>    
+                      <span>You qualify by shipping legit projects and don't engage in fraudulent activities in attempt to cheat us.</span>
+                    </li>
+                  </ul>
+                  </p>
                 </div>
               </div>
             </div>
