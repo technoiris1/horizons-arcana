@@ -217,6 +217,15 @@ export default function Info() {
                     </li>
                   </ul>
                 </div>
+                                <div className="border-b border-gray-100 pb-8">
+                  <p
+                    className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+                  >
+                    Contact Information
+                  </p>
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+Feel free to email us at <a href="mailto:arcana@horizons.hackclub.com" className="event-link">arcana@horizons.hackclub.com</a>!   </p>
+                </div>
               </div>
             </div>
           )}
