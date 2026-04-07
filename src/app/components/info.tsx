@@ -245,7 +245,7 @@ export default function Info() {
               </h3>
                               <div className="border-b border-gray-100 pb-8">
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
-                    In order to qualify for Arcana, you'll need to spend X amount of hours working on one or different projects and ship it on the <a href="https://horizons.hackclub.com" target="_blank" className="event-link">horizons platform</a>. Once it's reviewed and approved, you can buy a ticket to the event from there for free!
+                    In order to qualify for Arcana, you'll need to spend X amount of hours working on one or multiple projects and ship it on the <a href="https://horizons.hackclub.com" target="_blank" className="event-link">horizons platform</a>. Once it's reviewed and approved, you can buy a ticket of the event from there for free!
                   </p>
                 </div>
                 <div className="border-b border-gray-100 pb-8">
@@ -287,18 +287,21 @@ export default function Info() {
               </h3>
                 <div className="border-b border-gray-100 pb-8">
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
-                    Our aim is to make this event accessible to everyone regardless of their financial or geographical background, so we will be providing travel stipends. You can get travel stipends by working extra hours over the event requirement- you can buy travel stipends from the Horizons shop at a rate of X$ for every X hours spent.  <br />
+                    Our aim is to make this event accessible to everyone regardless of their financial or geographical background, so we will be providing travel stipends. You can get them by working extra hours over the event requirement from the Horizons shop at a rate of <span className="event-link">8.5$ for every hour </span> spent, which you can spend towards your flights/visa/passport etc.  <br />
                     </p>
                 </div>
+                         <div className="border-b border-gray-100 pb-8">
                     <p
                     className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
                   >
                     Flying in and out of Singapore
                   </p>
+             
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
-Singapore has only one main airport- Singapore Changi. You can request a staff pickup from the airport, if you do- staff will receive you and escort you to the venue. We will put out a form as we move closer to the event to request a staff pickup. 
+Singapore has only one main airport- <span className="event-link"> Singapore Changi</span>. You can request a staff pickup from the airport, if you do- staff will receive you and escort you to the venue. We will put out a form as we move closer to the event to request a staff pickup. 
 More details regarding when to fly in and out will be announced as we move closer to the event.
                   </p>
+                  </div>
             </div>
           )}
 
@@ -312,9 +315,9 @@ More details regarding when to fly in and out will be announced as we move close
               </h3>
                 <div className="border-b border-gray-100 pb-8">
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
-                    We understand sending their kid to a different country brings a lot of concerns for the parents and we totally respect them. Safety and well-being of the participants is our utmost priority and there will be no compromises with that.
+                    We understand sending their kid to a different country brings in a lot of concerns for the parents and we totally respect them. Safety and well-being of the participants is our utmost priority and there will be no compromises with that.
                     <br />
-                   For details, you can read our parent's guide <a className="event-link">here</a>!
+                   For details, you can read our parent's guide <a className="event-link">here</a>! You can also book a parents call and talk with the organisers- we'll try our best to clear all your concerns! <br />Email us at <a href="mailto:arcana@horizons.hackclub.com" className="event-link">arcana@horizons.hackclub.com</a> for any questions!
                     </p>
                 </div>
             </div>
