@@ -139,7 +139,7 @@ export default function Info() {
                 What is Arcana?
               </h3>
               <div className="space-y-10">
-                <div className="border-b border-gray-100 pb-8">
+                <div className="pb-2">
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
                     This July, 100+ teen hackers from all around the world will gather in Singapore for a 3-day long hackathon Horizons Arcana. Arcana is being organised by Hack Club, Hack Club is a 
                     501(c)(3) nonprofit that helps over 50,000 high school makers all around the world.
@@ -147,7 +147,7 @@ export default function Info() {
                     Food and accomodation will be provided, this hackathon is 100% free for all the attendees. Travel stipends will be provided too! Our goal is to make this event accessible to everyone regardless of their financial or geographical background.
                   </p>
                 </div>
-                <div className="border-b border-gray-100 pb-8">
+                <div className="pb-2">
                   <p
                     className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
                   >
@@ -182,7 +182,7 @@ export default function Info() {
                     </li>
                   </ul>
                 </div>
-                <div className="border-b border-gray-100 pb-8">
+                <div className="pb-2">
                   <p
                     className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
                   >
@@ -191,7 +191,7 @@ export default function Info() {
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
                    Horizons is a group of 7 Hack Club flagship hackathons taking place in all the continents(except Antarctica ofc), Arcana is the Horizons event in Singapore, Asia. <br />Read more about Horizons at <a href="https://horizons.hackclub.com" className="event-link" target="_blank">horizons.hackclub.com</a>!                    </p>
                 </div>
-                <div className="border-b border-gray-100 pb-8">
+                <div className="pb-2">
                   <p
                     className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
                   >
@@ -217,7 +217,7 @@ export default function Info() {
                     </li>
                   </ul>
                 </div>
-                                <div className="border-b border-gray-100 pb-8">
+                <div className="pb-2">
                   <p
                     className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
                   >
@@ -233,7 +233,7 @@ Feel free to email us at <a href="mailto:arcana@horizons.hackclub.com" className
           {activeTab === "details" && (
             <div className="space-y-10">
               <div className="space-y-10">
-                <div className="border-gray-100 pb-8">
+                <div className="border-gray-100 pb-2">
 <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">                   
      Arcana is from <span className="event-link">31st July-2nd August</span>, 2026 in <span className="event-link">Singapore</span>!
                     <br />
@@ -252,12 +252,12 @@ Feel free to email us at <a href="mailto:arcana@horizons.hackclub.com" className
               >
                 How to qualify?
               </h3>
-                              <div className="border-b border-gray-100 pb-8">
+                  <div className="pb-2">
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
                     In order to qualify for Arcana, you'll need to spend X amount of hours working on one or multiple projects and ship it on the <a href="https://horizons.hackclub.com" target="_blank" className="event-link">horizons platform</a>. Once it's reviewed and approved, you can buy a ticket of the event from there for free!
                   </p>
                 </div>
-                <div className="border-b border-gray-100 pb-8">
+                <div className="pb-2">
                   <p
                     className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
                   >
@@ -288,18 +288,18 @@ Feel free to email us at <a href="mailto:arcana@horizons.hackclub.com" className
 
           {activeTab === "travel" && (
             <div className="space-y-10">
-                          <h3
+                    <h3
                 className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
 
               >
                 Travel Stipends
               </h3>
-                <div className="border-b border-gray-100 pb-8">
+                <div className="pb-2">
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
                     Our aim is to make this event accessible to everyone regardless of their financial or geographical background, so we will be providing travel stipends. You can get them by working extra hours over the event requirement from the Horizons shop at a rate of <span className="event-link">8.5$ for every hour </span> spent, which you can spend towards your flights/visa/passport etc.  <br />
                     </p>
                 </div>
-                         <div className="border-b border-gray-100 pb-8">
+                         <div className="pb-2">
                     <p
                     className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
                   >
@@ -322,7 +322,7 @@ More details regarding when to fly in and out will be announced as we move close
               >
                 Parent's Guide
               </h3>
-                <div className="border-b border-gray-100 pb-8">
+                <div className="pb-2">
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
                     We understand sending their kid to a different country brings in a lot of concerns for the parents and we totally respect them. Safety and well-being of the participants is our utmost priority and there will be no compromises with that.
                     <br />
