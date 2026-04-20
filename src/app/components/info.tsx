@@ -14,6 +14,8 @@ export default function Info() {
   return (
     <section className={`${averiaSerif.className} bg-[#1b3364] px-6 pt-0 pb-24 sm:px-10 lg:px-16`}>
       <div className="mx-auto max-w-7xl">
+
+        {/* navbar with all the tabs */}
         <nav className="mt-0 flex flex-wrap items-center justify-center gap-x-2 gap-y-6 text-center pt-0" aria-label="Info sections">
           <button
             type="button"
@@ -129,12 +131,14 @@ export default function Info() {
           </button>
         </nav>
 
+
+
+{/* the content */}
         <div key={activeTab} className="mt-16 animate-[slideIn_320ms_ease]">
           {activeTab === "overview" && (
-            <div className="space-y-10">
+            <div className="space-y-4">
               <h3
                 className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
-
               >
                 What is Arcana?
               </h3>
@@ -231,29 +235,30 @@ Feel free to email us at <a href="mailto:arcana@horizons.hackclub.com" className
           )}
 
           {activeTab === "details" && (
-            <div className="space-y-10">
-              <div className="space-y-10">
-                <div className="border-gray-100 pb-2">
-<p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">                   
+            <div className="space-y-4">
+              <h3 className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl">
+                Event Details
+              </h3>
+              <div className="pb-2">
+                <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">                   
      Arcana is from <span className="event-link">31st July-2nd August</span>, 2026 in <span className="event-link">Singapore</span>!
                     <br />
                     More details like venue and schedule will be announced as we move closer to the event!
-                    </p>
-                </div>
-
+                </p>
               </div>
             </div>
           )}
 
           {activeTab === "qualification" && (
-            <div className="space-y-10">
+            <div className="space-y-4">
               <h3
-                   className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
+                className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
               >
                 How to qualify?
               </h3>
-                  <div className="pb-2">
-                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+              <div className="space-y-10">
+                <div className="pb-2">
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
                     In order to qualify for Arcana, you'll need to spend X amount of hours working on one or multiple projects and ship it on the <a href="https://horizons.hackclub.com" target="_blank" className="event-link">horizons platform</a>. Once it's reviewed and approved, you can buy a ticket of the event from there for free!
                   </p>
                 </div>
@@ -283,17 +288,18 @@ Feel free to email us at <a href="mailto:arcana@horizons.hackclub.com" className
                     </li>
                   </ul>
                 </div>
+              </div>
             </div>
           )}
 
           {activeTab === "travel" && (
-            <div className="space-y-10">
-                    <h3
+            <div className="space-y-4">
+              <h3
                 className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
-
               >
                 Travel Stipends
               </h3>
+              <div className="space-y-10">
                 <div className="pb-2">
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
                     Our aim is to make this event accessible to everyone regardless of their financial or geographical background, so we will be providing travel stipends. You can get them by working extra hours over the event requirement from the Horizons shop at a rate of <span className="event-link">8.5$ for every hour </span> spent, which you can spend towards your flights/visa/passport etc.  <br />
@@ -310,20 +316,20 @@ Feel free to email us at <a href="mailto:arcana@horizons.hackclub.com" className
 Singapore has only one main airport- <span className="event-link"> Singapore Changi</span>. You can request a staff pickup from the airport, if you do- staff will receive you and escort you to the venue. We will put out a form as we move closer to the event to request a staff pickup. 
 More details regarding when to fly in and out will be announced as we move closer to the event.
                   </p>
-                  </div>
+                </div>
+              </div>
             </div>
           )}
 
           {activeTab === "parents" && (
-            <div className="space-y-10">
-                          <h3
-            className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
-
+            <div className="space-y-4">
+              <h3
+                className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
               >
                 Parent's Guide
               </h3>
-                <div className="pb-2">
-                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
+              <div className="pb-2">
+                <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
                     We understand sending their kid to a different country brings in a lot of concerns for the parents and we totally respect them. Safety and well-being of the participants is our utmost priority and there will be no compromises with that.
                     <br />
                    For details, you can read our parent's guide <a className="event-link">here</a>! You can also book a parents call and talk with the organisers- we'll try our best to clear all your concerns! <br />Email us at <a href="mailto:arcana@horizons.hackclub.com" className="event-link">arcana@horizons.hackclub.com</a> for any questions!
@@ -340,7 +346,7 @@ More details regarding when to fly in and out will be announced as we move close
           font-weight: 700;
           text-decoration-line: underline;
           text-decoration-style: dotted;
-          text-decoration-color: rgba(249, 182, 255, 0.95);
+          text-decoration-color: rgb(249, 182, 255,0.95);
           text-decoration-thickness: 2px;
           text-underline-offset: 0.22em;
           transition: color 180ms ease, text-decoration-color 180ms ease, background-color 180ms ease;
@@ -373,4 +379,7 @@ More details regarding when to fly in and out will be announced as we move close
     </section>
   );
 }
+
+
+
 
