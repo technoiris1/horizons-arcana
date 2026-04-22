@@ -1,19 +1,54 @@
 export default function Parents(){
     return(
-                    <div className="space-y-4">
-              <h3
-                className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
-              >
-                Parent's Guide
-              </h3>
-              <div className="pb-2">
-                <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
-                    We understand sending their kid to a different country brings in a lot of concerns for the parents and we totally respect them. Safety and well-being of the participants is our utmost priority and there will be no compromises with that.
-                    <br />
-                   For details, you can read our parent's guide <a className="event-link">here</a>! You can also book a parents call and talk with the organisers- we'll try our best to clear all your concerns! <br />Email us at <a href="mailto:arcana@horizons.hackclub.com" className="event-link">arcana@horizons.hackclub.com</a> for any questions!
-                    </p>
-                </div>
-                      <style jsx>{`
+  <div className="space-y-4">
+      <h3 className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl">
+          For Parents
+      </h3>
+      <div className="space-y-10">
+        <div className="pb-2">
+        <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
+            We understand sending their kid to a different country brings in a lot of concerns for the parents and we totally respect them. Safety and well-being of the participants is our utmost priority and there will be no compromises with that.
+          <br />
+Below listed are some resources which may help the parents clear their doubts regarding the event and the safety measures taken.
+          </p>
+    </div>
+    <div className="pb-2">
+      <p
+      className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+      >
+      Parent's Guide
+      </p>
+      <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+      Closer to the event, we will release a detailed parent's guide which will include all the information regarding the event, safety and safeguarding measures, code of conduct, event waivers, emergency contact information and hotlines etc.
+      </p>
+      </div>
+
+
+    <div className="pb-2">
+      <p
+      className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+      >
+      Parent's Call
+      </p>
+      <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+      If you have any doubts or concerns regarding the event, you can schedule a call and talk with the organisers of the event directly. Email us at <a href="mailto:arcana@horizons.hackclub.com" className="event-link">arcana@horizons.hackclub.com</a> to schedule a call!
+       </p>
+      </div>
+
+
+    <div className="pb-2">
+      <p
+      className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+      >
+      Parent's Accompanying the Participant
+      </p>
+      <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+      We understand that some parents might want to accompany their kid for travel and the event. While that's totally fine, Hack Club won't be able to cover any expenses for the parents, including flights, accommodation, or other travel costs. 
+      <br />
+      Parents won't be allowed inside the venue during the event, but they're welcome to briefly stop by for 5-10 minutes to check in and make sure everything feels comfortable.
+    </p>
+      </div>
+    <style jsx>{`
         .event-link {
           color: #f9b6ff;   
           font-weight: 700;
@@ -48,8 +83,10 @@ export default function Parents(){
             transform: translateX(0);
           }
         }
-      `}</style>
-            </div>
+      `}
+      </style>
+      </div>
+    </div>
             
     )
 }

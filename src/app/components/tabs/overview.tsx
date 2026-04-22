@@ -22,7 +22,7 @@ export default function Overview(){
             What is Hack Club?
             </p>
             <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2">
             <span>
             Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn to code and build projects. We’re the largest teen-led coding community, with over 50,000 students building projects with their friends in Hack Club each year. You can learn more about Hack Club at <a href="https://hackclub.com" target="_blank" className="event-link"> hackclub.com</a>!
             </span>

@@ -30,10 +30,10 @@ Our aim is to make this event accessible to everyone regardless of their financi
                   Flying in and out of Singapore
                 </p>
              
-          <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
-Singapore has one main airport- Singapore Changi, it is one of the best airports in the world and is very well connected to the rest of the world. 
-You should try to fly in before the evening of 31st July and fly out anytime after the evening of 2nd August.
-    </p>
+                <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                Singapore has one main airport- Singapore Changi, it is one of the best airports in the world and is very well connected to the rest of the world. 
+                You should try to fly in before the evening of 31st July and fly out anytime after the evening of 2nd August.
+                </p>
                 </div>
                                 <div className="pb-2">
                   <p
