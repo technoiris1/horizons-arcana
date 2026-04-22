@@ -6,7 +6,7 @@ interface NavbarProps {
 export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
     return(
         
-                <nav className="mt-0 flex flex-wrap items-center justify-center gap-x-2 gap-y-6 text-center pt-0 mt-16" aria-label="Info sections">
+                <nav className="flex flex-wrap items-center justify-center gap-x-2 gap-y-6 text-center pt-0 mt-16" aria-label="Info sections">
           <button
             type="button"
             onClick={() => setActiveTab("overview")}

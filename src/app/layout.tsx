@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import LenisProvider from "./components/providers/LenisProvider";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -31,7 +30,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full overflow-x-hidden">
-        <LenisProvider>{children}</LenisProvider>
+        {children}
       </body>
     </html>
   );
