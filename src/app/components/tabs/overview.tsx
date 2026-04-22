@@ -22,11 +22,18 @@ export default function Overview(){
             What is Hack Club?
             </p>
             <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+            <div className="flex flex-col gap-3">
+            <span>
             Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn to code and build projects. We’re the largest teen-led coding community, with over 50,000 students building projects with their friends in Hack Club each year. You can learn more about Hack Club at <a href="https://hackclub.com" target="_blank" className="event-link"> hackclub.com</a>!
-            <br />
+            </span>
+        
+            <span>
             Some of the past events we've run are-
+            </span>
+             </div>
             </p>
-            <ul className="mt-5 space-y-3 text-[#6cc7ec] sm:text-lg">
+           
+            <ul className="mt-2 space-y-3 text-[#6cc7ec] sm:text-lg">
             <li className="flex items-center gap-3">
                 <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 shrink-0 -rotate-6 text-white translate-y-[0.5px]">
                 <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
