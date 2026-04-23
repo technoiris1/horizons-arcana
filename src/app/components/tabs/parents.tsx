@@ -40,7 +40,7 @@ Below listed are some resources which may help the parents clear their doubts re
       <p
       className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
       >
-      Parent's Accompanying the Participant
+      Parents Accompanying the Participant
       </p>
       <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
       We understand that some parents might want to accompany their kid for travel and the event. While that's totally fine, Hack Club won't be able to cover any expenses for the parents, including flights, accommodation, or other travel costs. 
