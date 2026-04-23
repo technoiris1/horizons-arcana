@@ -2,7 +2,7 @@ export default function Hero() {
     return (
         <div className="w-full overflow-x-hidden relative">
             <img src="/arcana-hero.avif" alt="Horizons Arcana - Teen hackathon in Singapore organized by Hack Club" className="w-full h-auto block" />
-            <p className="absolute left-1/2 -translate-x-1/2 top-[62%] text-[#1b3465] text-6xl font-[family-name:var(--font-fredoka)] font-[550] tracking-wide">
+            <p className="absolute left-1/2 -translate-x-1/2 top-[62%] text-[#1b3465] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-[family-name:var(--font-shantell-sans)] tracking-wider whitespace-nowrap px-4">
                 A HACKATHON IN SINGAPORE
             </p>
             <style>{`

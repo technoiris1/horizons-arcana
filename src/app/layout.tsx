@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Gorditas, Damion, Fredoka, Shrikhand } from "next/font/google";
+import { Geist, Geist_Mono, Gorditas, Damion, Fredoka, Shrikhand, Shantell_Sans } from "next/font/google";
 import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +32,11 @@ const shrikhand = Shrikhand({
   subsets: ["latin"],
   weight: "400",
 });
-
+const shantellSans = Shantell_Sans({
+  variable: "--font-shantell-sans",
+  subsets: ["latin"],
+  weight: "700",
+});
 
 export const metadata: Metadata = {
   title: "Horizons Arcana | Teen Hackathon in Singapore 2026",
@@ -122,7 +126,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${gorditas.variable} ${damion.variable} ${fredoka.variable} ${shrikhand.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${gorditas.variable} ${damion.variable} ${fredoka.variable} ${shrikhand.variable} ${shantellSans.variable} h-full antialiased`}
     >
       <head>
         <script
