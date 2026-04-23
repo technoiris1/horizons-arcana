@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /.next/
+Disallow: /node_modules/
+
+Sitemap: https://horizons-arcana.vercel.app/sitemap.xml
+
+# Google-specific
+User-agent: Googlebot
+Allow: /
+
+# Bing-specific
+User-agent: Bingbot
+Allow: /
