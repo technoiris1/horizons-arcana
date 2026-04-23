@@ -9,7 +9,7 @@ export default function Qualification(){
               <div className="space-y-10">
                 <div className="pb-2">
                   <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
-                    In order to qualify for Arcana, you'll need to spend <span className="event-link">35 hours</span> working on one or multiple projects and ship it on the <a href="https://horizons.hackclub.com" target="_blank" className="event-link">horizons platform</a>. Once it's reviewed and approved, you can buy a ticket of the event from there for free!
+                    In order to qualify for Arcana, you'll need to spend <span className="event-link">35 hours</span> working on one or multiple technical projects and ship them on the <a href="https://horizons.hackclub.com" target="_blank" className="event-link">Horizons platform</a>. Once they're reviewed and approved, you can buy a ticket to the event from there for free!
                   </p>
                 </div>
                 <div className="pb-2">
@@ -37,6 +37,18 @@ export default function Qualification(){
                       <span>You qualify by shipping legit projects and don't engage in fraudulent activities in an attempt to cheat us.</span>
                     </li>
                   </ul>
+                </div>
+                                <div className="pb-2">
+                  <p
+                    className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+                  >
+                    What kind of projects can I ship?
+                  </p>
+                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                    You can ship any type of technical projects- spanning from websites to hardware!
+                    <br />
+                    You have to use either hackatime or lapse to track your time. The process of shipping software projects is normally just submitting the github repo and a demo link, for hardware projects- check out the guide <a href="https://hackclub.slack.com/archives/C0AF4T2GCTZ/p1773950008234199" target="_blank" className="event-link">here</a>!
+                  </p>
                 </div>
               </div>
         <style jsx>{`

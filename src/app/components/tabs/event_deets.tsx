@@ -9,6 +9,8 @@ export default function Details(){
 Arcana is from <span className="event-link">31st July-2nd August</span>, 2026 in <span className="event-link">Singapore</span>!
             <br />
             More details like venue and schedule will be announced as we move closer to the event!
+            <br />
+            Join <a href="https://hackclub.slack.com/archives/C0AF4T2GCTZ" target="_blank" className="event-link">#horizons-arcana</a> on Hack Club Slack for the latest updates and announcements!
         </p>
         </div>
               <style jsx>{`

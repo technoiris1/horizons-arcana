@@ -12,7 +12,7 @@ export default function Overview(){
             This July, 100+ teen hackers from all around the world will gather in Singapore for a 3-day long hackathon Horizons Arcana. Arcana is being organised by Hack Club, Hack Club is a 
             501(c)(3) nonprofit that helps over 50,000 high school makers all around the world.
             <br />
-            Food and accomodation will be provided, this hackathon is 100% free for all the attendees. Travel stipends will be provided too! Our goal is to make this event accessible to everyone regardless of their financial or geographical background.
+            This hackathon is 100% free for all the attendees. Travel stipends available!
             </p>
         </div>
         <div className="pb-2">

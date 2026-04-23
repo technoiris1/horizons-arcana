@@ -2,7 +2,7 @@ export default function Parents(){
     return(
   <div className="space-y-4">
       <h3 className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl">
-          For Parents
+          Parents Section
       </h3>
       <div className="space-y-10">
         <div className="pb-2">

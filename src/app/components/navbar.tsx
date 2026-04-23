@@ -117,7 +117,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
               activeTab === "parents" ? "font-bold text-[#f9b6ff]" : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
-            For Parents
+            Parents Section
           </button>
         </nav>
     )
