@@ -61,7 +61,7 @@ export default function Overview(){
             <p
             className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
             >
-         
+            What is Horizons?
             </p>
             <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
             Horizons is a group of 7 Hack Club flagship hackathons taking place in all the continents(except Antarctica ofc), Arcana is the Horizons event in Singapore, Asia. <br />Read more about Horizons at <a href="https://horizons.hackclub.com" className="event-link" target="_blank">horizons.hackclub.com</a>!                    </p>
