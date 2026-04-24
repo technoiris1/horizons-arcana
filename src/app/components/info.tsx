@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Averia_Serif_Libre } from "next/font/google";
 import Overview from "./tabs/overview";
 import Details from "./tabs/event_deets";
@@ -15,36 +15,37 @@ const averiaSerif = Averia_Serif_Libre({
 
 export default function Info() {
   const [activeTab, setActiveTab] = useState("overview");
+  const navbarRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (navbarRef.current) {
+      navbarRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [activeTab]);
 
   return (
     <section className={`${averiaSerif.className} bg-[#1b3364] px-6 pt-0 pb-24 sm:px-10 lg:px-16`}>
       <div className="mx-auto max-w-7xl">
+        {/* navbar with all the tabs */}
+        <div
+          ref={navbarRef}
+          className="sticky top-0 z-40 bg-[#1b3364] py-2"
+        >
+          <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+        </div>
 
-        {/* navbar with all the tabs */}  
-        <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+        {/* the content */}
+        <div ref={contentRef} className="mt-20 animate-[slideIn_320ms_ease]" key={activeTab}>
+          {activeTab === "overview" && <Overview />}
 
+          {activeTab === "details" && <Details />}
 
-{/* the content */}
-        <div className="mt-20 animate-[slideIn_320ms_ease]" key={activeTab}>
-          {activeTab === "overview" && (
-<Overview />
-          )}
+          {activeTab === "qualification" && <Qualification />}
 
-          {activeTab === "details" && (
-<Details />
-          )}
+          {activeTab === "travel" && <Travel />}
 
-          {activeTab === "qualification" && (
-<Qualification />
-          )}
-
-          {activeTab === "travel" && (
-<Travel />
-          )}
-
-          {activeTab === "parents" && (
-<Parents />
-          )}
+          {activeTab === "parents" && <Parents />}
         </div>
       </div>
     </section>
