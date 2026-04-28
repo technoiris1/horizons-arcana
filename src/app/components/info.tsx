@@ -19,7 +19,7 @@ export default function Info() {
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (navbarRef.current) {
+    if (navbarRef.current && activeTab !== "overview") {
       navbarRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [activeTab]);
