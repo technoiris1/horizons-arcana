@@ -17,15 +17,16 @@ export default function Info() {
   const [activeTab, setActiveTab] = useState("overview");
   const navbarRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (navbarRef.current && activeTab !== "overview") {
-      navbarRef.current.scrollIntoView({ behavior: "smooth" });
+    if (sectionRef.current && activeTab !== "overview") {
+      sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, [activeTab]);
 
   return (
-    <section className={`${averiaSerif.className} bg-[#1b3364] px-6 pt-0 pb-24 sm:px-10 lg:px-16`}>
+    <section ref={sectionRef} className={`${averiaSerif.className} bg-[#1b3364] px-6 pt-0 pb-24 sm:px-10 lg:px-16`}>
       <div className="mx-auto max-w-7xl">
         {/* navbar with all the tabs */}
         <div
