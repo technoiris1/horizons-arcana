@@ -20,7 +20,7 @@ export default function Info() {
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (sectionRef.current && activeTab !== "overview") {
+    if (sectionRef.current) {
       sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, [activeTab]);
