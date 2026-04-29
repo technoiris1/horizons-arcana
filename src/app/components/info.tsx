@@ -15,15 +15,38 @@ const averiaSerif = Averia_Serif_Libre({
 
 export default function Info() {
   const [activeTab, setActiveTab] = useState("overview");
+  const [navbarTranslate, setNavbarTranslate] = useState(0);
   const navbarRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    if (sectionRef.current) {
+    if (sectionRef.current && activeTab !== "overview") {
       sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   }, [activeTab]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current || !navbarRef.current) return;
+
+      const navbarHeight = navbarRef.current.offsetHeight;
+      const windowHeight = window.innerHeight;
+      const totalHeight = document.documentElement.scrollHeight;
+      const currentScroll = window.scrollY;
+
+      const distanceToBottom = totalHeight - (currentScroll + windowHeight);
+      if (distanceToBottom < navbarHeight * 2) {
+        const translateAmount = Math.max(0, navbarHeight * 2 - distanceToBottom);
+        setNavbarTranslate(translateAmount);
+      } else {
+        setNavbarTranslate(0);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <section ref={sectionRef} className={`${averiaSerif.className} bg-[#1b3364] px-6 pt-0 pb-24 sm:px-10 lg:px-16`}>
@@ -31,7 +54,8 @@ export default function Info() {
         {/* navbar with all the tabs */}
         <div
           ref={navbarRef}
-          className="sticky top-0 z-40 bg-[#1b3364] py-2"
+          className="sticky top-0 z-40 bg-[#1b3364] py-2 transition-transform duration-300"
+          style={{ transform: `translateY(-${navbarTranslate}px)` }}
         >
           <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
