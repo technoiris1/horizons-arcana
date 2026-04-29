@@ -14,7 +14,7 @@ export default function Hero() {
                     animation: slowFloat 4s ease-in-out infinite;
                 }
             `}</style>
-            <div className="absolute left-1/2 -translate-x-1/2 top-[54%]">
+            <div className="absolute left-1/2 -translate-x-1/2 top-[54%] slow-float">
                 <svg width="240" height="110" viewBox="0 0 240 110" fill="none" stroke="#1b3465" strokeLinecap="round" strokeLinejoin="round">
                     {/* first arrow*/}
                     <path d="M 70 10 L 120 40 L 170 10" strokeWidth="13" />
