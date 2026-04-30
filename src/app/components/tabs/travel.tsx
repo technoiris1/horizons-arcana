@@ -8,7 +8,7 @@ export default function Travel(){
               </h3>
               <div className="space-y-10">
                 <div className="pb-2">
-                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
+                  <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-xl">
                   Arcana is in Singapore, a small island nation in South-East Asia. Singapore is pretty well connected to the rest of the world, below you can find some information which can help you plan your travel-
               </p>
                 </div>
@@ -19,7 +19,7 @@ export default function Travel(){
                     Travel Stipends
                   </p>
              
-                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                  <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
 Our aim is to make this event accessible to everyone regardless of their financial or geographical background, so we will provide travel stipends to whoever works for them. You can get the travel stipends from Horizons shop at the rate of 8.5$/hr, which you can spend towards your flights, visa etc.
                   </p>
                 </div>
@@ -30,7 +30,7 @@ Our aim is to make this event accessible to everyone regardless of their financi
                   Flying in and out of Singapore
                 </p>
              
-                <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
                 Singapore has one main airport- Singapore Changi, it is one of the best airports in the world and is very well connected to the rest of the world. 
                 You should try to fly in before the evening of 31st July and fly out anytime after the evening of 2nd August.
                 </p>
@@ -42,7 +42,7 @@ Our aim is to make this event accessible to everyone regardless of their financi
                   Visa
                 </p>
              
-          <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+          <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
 Most nationalities can travel to Singapore visa-free for a certain number of days or can get a visa on arrival(VoA). If you require a visa to enter Singapore, we will try our best to help you out with it. More details surrounding the visa process will be announced as we move closer to the event.
     </p>
                 </div>
@@ -53,7 +53,7 @@ Most nationalities can travel to Singapore visa-free for a certain number of day
                   Airport Pickups
                 </p>
              
-          <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+          <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
 Participants can request airport pickups, if requested- staff members will be there at the airport to pick them up and drop them to the venue. More details about this will be announced as we move closer to the event.
   </p>
                 </div>

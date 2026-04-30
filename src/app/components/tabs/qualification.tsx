@@ -8,7 +8,7 @@ export default function Qualification(){
               </h3>
               <div className="space-y-10">
                 <div className="pb-2">
-                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
+                  <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-xl">
                     In order to qualify for Arcana, you'll need to spend <span className="event-link">35 hours</span> working on one or multiple technical projects and ship them on the <a href="https://horizons.hackclub.com" target="_blank" className="event-link">Horizons platform</a>. Once they're reviewed and approved, you can buy a ticket to the event from there for free!
                   </p>
                 </div>
@@ -18,10 +18,10 @@ export default function Qualification(){
                   >
                     Can I participate?
                   </p>
-                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                  <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
                     Yes, you can as long as you meet the requirements mentioned below:
                   </p>
-                  <ul className="mt-2 space-y-3 text-[#6cc7ec] sm:text-lg">
+                  <ul className="mt-2 space-y-3 text-[#1b3465] sm:text-lg">
                     <li className="flex items-center gap-3">
                       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 shrink-0 -rotate-6 text-white translate-y-[0.5px]">
                         <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
@@ -44,7 +44,7 @@ export default function Qualification(){
                   >
                     What kind of projects can I ship?
                   </p>
-                  <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+                  <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
                     You can ship any type of technical projects- spanning from websites to hardware!
                     <br />
                     You have to use either hackatime or lapse to track your time. The process of shipping software projects is normally just submitting the github repo and a demo link, for hardware projects- check out the guide <a href="https://hackclub.slack.com/archives/C0AF4T2GCTZ/p1773950008234199" target="_blank" className="event-link">here</a>!

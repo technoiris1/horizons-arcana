@@ -2,13 +2,13 @@ export default function Overview(){
     return(
     <div className="space-y-4">
         <h3
-        className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl"
+        className="text-3xl font-black tracking-tight text-[#1b3465] sm:text-4xl"
         >
         What is Arcana?
         </h3>
         <div className="space-y-10">
         <div className="pb-2">
-            <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">
+            <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-xl">
             This July, 100+ teen hackers from all around the world will gather in Singapore for a 3-day long hackathon Horizons Arcana. Arcana is being organised by Hack Club, Hack Club is a 
             501(c)(3) nonprofit that helps over 50,000 high school makers all around the world.
             <br />
@@ -17,11 +17,11 @@ export default function Overview(){
         </div>
         <div className="pb-2">
             <p
-            className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+            className="text-base font-bold text-[#1b3465] sm:text-2xl"
             >
             What is Hack Club?
             </p>
-            <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+            <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
             <div className="flex flex-col gap-2">
             <span>
             Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn to code and build projects. We’re the largest teen-led coding community, with over 50,000 students building projects with their friends in Hack Club each year. You can learn more about Hack Club at <a href="https://hackclub.com" target="_blank" className="event-link"> hackclub.com</a>!
@@ -33,7 +33,7 @@ export default function Overview(){
              </div>
             </p>
            
-            <ul className="mt-2 space-y-3 text-[#6cc7ec] sm:text-lg">
+            <ul className="mt-2 space-y-3 text-[#1b3465] sm:text-lg">
             <li className="flex items-center gap-3">
                 <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 shrink-0 -rotate-6 text-white translate-y-[0.5px]">
                 <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
@@ -59,23 +59,23 @@ export default function Overview(){
         </div>
         <div className="pb-2">
             <p
-            className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+            className="text-base font-bold text-[#1b3465] sm:text-2xl"
             >
             What is Horizons?
             </p>
-            <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+            <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
             Horizons is a group of 7 Hack Club flagship hackathons taking place in all the continents(except Antarctica ofc), Arcana is the Horizons event in Singapore, Asia. <br />Read more about Horizons at <a href="https://horizons.hackclub.com" className="event-link" target="_blank">horizons.hackclub.com</a>!                    </p>
         </div>
         <div className="pb-2">
             <p
-            className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+            className="text-base font-bold text-[#1b3465] sm:text-2xl"
             >
             Can I participate?
             </p>
-            <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+            <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
             Yes, you can as long as you meet the requirements mentioned below:
             </p>
-            <ul className="mt-5 space-y-3 text-[#6cc7ec] sm:text-lg">
+            <ul className="mt-5 space-y-3 text-[#1b3465] sm:text-lg">
             <li className="flex items-center gap-3">
                 <svg viewBox="0 0 24 24" aria-hidden="true" className="h-4 w-4 shrink-0 -rotate-6 text-white translate-y-[0.5px]">
                 <path d="M12 2.6L14.2 7.9L19.5 9.6L15.6 13.2L16.3 19L12 16.4L7.7 19L8.4 13.2L4.5 9.6L9.8 7.9L12 2.6Z" fill="currentColor" />
@@ -94,21 +94,21 @@ export default function Overview(){
         </div>
         <div className="pb-2">
             <p
-            className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+            className="text-base font-bold text-[#1b3465] sm:text-2xl"
             >
             Contact Information
             </p>
-            <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-lg">
+            <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-lg">
 Feel free to email us at <a href="mailto:arcana@horizons.hackclub.com" className="event-link">arcana@horizons.hackclub.com</a>!   </p>
         </div>
         </div>
               <style jsx>{`
         .event-link {
-          color: #f9b6ff;   
+          color: #1b3465;   
           font-weight: 700;
           text-decoration-line: underline;
           text-decoration-style: dotted;
-          text-decoration-color: rgb(249, 182, 255,0.95);
+          text-decoration-color: rgb(27, 52, 101,0.95);
           text-decoration-thickness: 2px;
           text-underline-offset: 0.22em;
           transition: color 180ms ease, text-decoration-color 180ms ease, background-color 180ms ease;
@@ -122,7 +122,7 @@ Feel free to email us at <a href="mailto:arcana@horizons.hackclub.com" className
         }
 
         .event-link:focus-visible {
-          outline: 2px dashed rgba(255, 215, 255, 0.95);
+          outline: 2px dashed rgba(27, 52, 101, 0.95);
           outline-offset: 3px;
           border-radius: 0.25rem;
         }

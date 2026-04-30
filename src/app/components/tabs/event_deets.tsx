@@ -5,7 +5,7 @@ export default function Details(){
         Event Details
         </h3>
         <div className="pb-2">
-        <p className="mt-4 max-w-4xl leading-8 text-[#6cc7ec] sm:text-xl">                   
+        <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-xl">                   
 Arcana is from <span className="event-link">31st July-2nd August</span>, 2026 in <span className="event-link">Singapore</span>!
             <br />
             More details like venue and schedule will be announced as we move closer to the event!
