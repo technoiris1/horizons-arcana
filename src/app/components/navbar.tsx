@@ -12,7 +12,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
             onClick={() => setActiveTab("overview")}
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
-              activeTab === "overview" ? "font-bold text-[#f9b6ff]" : "text-gray-500 hover:text-[#6cc7ec]"
+              activeTab === "overview" ? "font-bold text-[#1b3465]" : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
             Overview
@@ -37,7 +37,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
             onClick={() => setActiveTab("details")}
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
-              activeTab === "details" ? "font-bold text-[#f9b6ff]" : "text-gray-500 hover:text-[#6cc7ec]"
+              activeTab === "details" ? "font-bold text-[#1b3465]" : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
             Event Details
@@ -63,7 +63,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
               activeTab === "qualification"
-                ? "font-bold text-[#f9b6ff]"
+                ? "font-bold text-[#1b3465]"
                 : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
@@ -89,7 +89,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
             onClick={() => setActiveTab("travel")}
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
-              activeTab === "travel" ? "font-bold text-[#f9b6ff]" : "text-gray-500 hover:text-[#6cc7ec]"
+              activeTab === "travel" ? "font-bold text-[#1b3465]" : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
             Travel
@@ -114,7 +114,7 @@ export default function Navbar({ activeTab, setActiveTab }: NavbarProps) {
             onClick={() => setActiveTab("parents")}
             style={{ fontFamily: '"Arcane Nine", serif' }}
             className={`px-3 text-lg uppercase tracking-[0.14em] transition sm:text-2xl ${
-              activeTab === "parents" ? "font-bold text-[#f9b6ff]" : "text-gray-500 hover:text-[#6cc7ec]"
+              activeTab === "parents" ? "font-bold text-[#1b3465]" : "text-gray-500 hover:text-[#6cc7ec]"
             }`}
           >
             Parents Section
