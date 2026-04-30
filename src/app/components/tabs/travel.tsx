@@ -77,10 +77,7 @@ Participants can request airport pickups, if requested- staff members will be th
         }
 
         .event-link:hover {
-          color: #ffd7ff;
           text-decoration-style: wavy;
-          text-decoration-color: rgba(255, 215, 255, 0.98);
-          background-color: rgba(255, 255, 255, 0.08);
         }
 
         .event-link:focus-visible {
