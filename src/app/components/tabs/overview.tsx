@@ -17,6 +17,34 @@ export default function Overview(){
             This hackathon is 100% free for all the attendees. Travel stipends available!
             </p>
         </div>
+
+<div className="pb-8 gap-6">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+    <div className="flex flex-col items-center">
+      <img 
+        src="https://cdn.hackclub.com/019ddee3-630c-7020-ae88-59b873420ba7/WhatsApp%20Image%202026-04-30%20at%2020.20.56.jpeg" 
+        alt="Arcana event" 
+        className="w-full h-48 md:h-56 object-cover rounded-lg"
+      />
+    </div>
+    <div className="flex flex-col items-center">
+      <img 
+        src="https://cdn.hackclub.com/019ddee3-43d3-7c55-a1ec-3358bbfb0dee/WhatsApp%20Image%202026-04-30%20at%2020.20.57.jpeg" 
+        alt="Arcana logo" 
+        className="w-full h-48 md:h-56 object-cover rounded-lg"
+      />
+    </div>
+    <div className="flex flex-col items-center">
+      <img 
+        src="https://cdn.hackclub.com/019ddee6-b1b8-7619-81b1-dc32b7e8821d/image%20(114).png" 
+        alt="Arcana footer" 
+        className="w-full h-48 md:h-56 object-cover rounded-lg"
+      />
+    </div>
+  </div>
+  <p className="mt-3 text-center text-sm md:text-base text-[#1b3465] font-medium">Hack Clubbers at Overglade, A game jam in Singapore in February 2026</p>
+</div>
+
         <div className="pb-2">
             <p
             className="text-base font-bold text-[#1b3465] sm:text-2xl"
