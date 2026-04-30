@@ -3,6 +3,7 @@ export default function Overview(){
     <div className="space-y-4">
         <h3
         className="text-3xl font-black tracking-tight text-[#1b3465] sm:text-4xl"
+        style= {{ fontFamily: '"Cooper BT", serif' }}
         >
         What is Arcana?
         </h3>
@@ -18,6 +19,7 @@ export default function Overview(){
         <div className="pb-2">
             <p
             className="text-base font-bold text-[#1b3465] sm:text-2xl"
+                 style= {{ fontFamily: '"Cooper BT", serif' }}
             >
             What is Hack Club?
             </p>
@@ -60,6 +62,7 @@ export default function Overview(){
         <div className="pb-2">
             <p
             className="text-base font-bold text-[#1b3465] sm:text-2xl"
+            style= {{ fontFamily: '"Cooper BT", serif' }}
             >
             What is Horizons?
             </p>
@@ -69,6 +72,7 @@ export default function Overview(){
         <div className="pb-2">
             <p
             className="text-base font-bold text-[#1b3465] sm:text-2xl"
+            style= {{ fontFamily: '"Cooper BT", serif' }}
             >
             Can I participate?
             </p>
@@ -95,6 +99,7 @@ export default function Overview(){
         <div className="pb-2">
             <p
             className="text-base font-bold text-[#1b3465] sm:text-2xl"
+                 style= {{ fontFamily: '"Cooper BT", serif' }}
             >
             Contact Information
             </p>

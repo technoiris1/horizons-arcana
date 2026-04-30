@@ -54,7 +54,7 @@ export default function Info() {
         {/* navbar with all the tabs */}
         <div
           ref={navbarRef}
-          className="sticky top-0 z-40 bg-[#74bbf1] py-2 transition-transform duration-300"
+          className="sticky top-0 z-40 bg-[#d1f3ff] py-2 transition-transform duration-300"
           style={{ transform: `translateY(-${navbarTranslate}px)` }}
         >
           <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />

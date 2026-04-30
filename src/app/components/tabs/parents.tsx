@@ -1,7 +1,10 @@
 export default function Parents(){
     return(
   <div className="space-y-4">
-      <h3 className="text-3xl font-black tracking-tight text-[#f9b6ff] sm:text-4xl">
+      <h3 
+      className="text-3xl font-black tracking-tight text-[#1b3465] sm:text-4xl"
+      style= {{ fontFamily: '"Cooper BT", serif' }}
+      >
           Parents Section
       </h3>
       <div className="space-y-10">
@@ -14,7 +17,8 @@ Below listed are some resources which may help the parents clear their doubts re
     </div>
     <div className="pb-2">
       <p
-      className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+      className="text-base font-bold text-[#1b3465] sm:text-2xl"
+      style= {{ fontFamily: '"Cooper BT", serif' }}
       >
       Parent's Guide
       </p>
@@ -26,7 +30,8 @@ Below listed are some resources which may help the parents clear their doubts re
 
     <div className="pb-2">
       <p
-      className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+      className="text-base font-bold text-[#1b3465] sm:text-2xl"
+      style= {{ fontFamily: '"Cooper BT", serif' }}
       >
       Parent's Call
       </p>
@@ -38,7 +43,8 @@ Below listed are some resources which may help the parents clear their doubts re
 
     <div className="pb-2">
       <p
-      className="text-base font-bold text-[#f9b6ff] sm:text-2xl"
+      className="text-base font-bold text-[#1b3465] sm:text-2xl"
+      style= {{ fontFamily: '"Cooper BT", serif' }}
       >
       Parents Accompanying the Participant
       </p>
@@ -50,11 +56,11 @@ Below listed are some resources which may help the parents clear their doubts re
       </div>
     <style jsx>{`
         .event-link {
-          color: #f9b6ff;   
+          color: #1b3465;   
           font-weight: 700;
           text-decoration-line: underline;
           text-decoration-style: dotted;
-          text-decoration-color: rgb(249, 182, 255,0.95);
+          text-decoration-color: rgb(27, 52, 101,0.95);
           text-decoration-thickness: 2px;
           text-underline-offset: 0.22em;
           transition: color 180ms ease, text-decoration-color 180ms ease, background-color 180ms ease;
@@ -68,7 +74,7 @@ Below listed are some resources which may help the parents clear their doubts re
         }
 
         .event-link:focus-visible {
-          outline: 2px dashed rgba(255, 215, 255, 0.95);
+          outline: 2px dashed rgba(27, 52, 101, 0.95);
           outline-offset: 3px;
           border-radius: 0.25rem;
         }
