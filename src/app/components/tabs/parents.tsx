@@ -7,7 +7,8 @@ export default function Parents(){
       >
           Parents Section
       </h3>
-      <div className="space-y-10">
+      <div className="space-y-10"
+            style= {{ fontFamily: '"Cooper BT", serif' }}>
         <div className="pb-2">
         <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-xl">
             We understand sending their kid to a different country brings in a lot of concerns for the parents and we totally respect them. Safety and well-being of the participants is our utmost priority and there will be no compromises with that.

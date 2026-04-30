@@ -7,7 +7,8 @@ export default function Travel(){
               >
                 Travelling to Arcana
               </h3>
-              <div className="space-y-10">
+              <div className="space-y-10"
+                style= {{ fontFamily: '"Cooper BT", serif' }}>
                 <div className="pb-2">
                   <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-xl">
                   Arcana is in Singapore, a small island nation in South-East Asia. Singapore is pretty well connected to the rest of the world, below you can find some information which can help you plan your travel-

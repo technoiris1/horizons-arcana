@@ -7,7 +7,8 @@ export default function Qualification(){
               >
                 How to qualify?
               </h3>
-              <div className="space-y-10">
+              <div className="space-y-10"
+                    style= {{ fontFamily: '"Cooper BT", serif' }}>
                 <div className="pb-2">
                   <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-xl">
                     In order to qualify for Arcana, you'll need to spend <span className="event-link">35 hours</span> working on one or multiple technical projects and ship them on the <a href="https://horizons.hackclub.com" target="_blank" className="event-link">Horizons platform</a>. Once they're reviewed and approved, you can buy a ticket to the event from there for free!

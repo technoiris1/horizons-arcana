@@ -7,7 +7,8 @@ export default function Overview(){
         >
         What is Arcana?
         </h3>
-        <div className="space-y-10">
+        <div className="space-y-10" 
+        style= {{ fontFamily: '"Cooper BT", serif' }}>
         <div className="pb-2">
             <p className="mt-4 max-w-4xl leading-8 text-[#1b3465] sm:text-xl">
             This July, 100+ teen hackers from all around the world will gather in Singapore for a 3-day long hackathon Horizons Arcana. Arcana is being organised by Hack Club, Hack Club is a 
