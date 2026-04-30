@@ -18,7 +18,7 @@ export default function Overview(){
             </p>
         </div>
 
-<div className="pb-8 gap-6">
+<div className="pb-2 gap-6">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
     <div className="flex flex-col items-center">
       <img 
@@ -42,7 +42,7 @@ export default function Overview(){
       />
     </div>
   </div>
-  <p className="mt-3 text-center text-sm md:text-base text-[#1b3465] font-medium">Hack Clubbers at Overglade, A game jam in Singapore in February 2026</p>
+  <p className="mt-6 text-center text-sm md:text-base text-[#1b3465] font-semibold">Hack Clubbers at Overglade, A game jam in Singapore in February 2026</p>
 </div>
 
         <div className="pb-2">
