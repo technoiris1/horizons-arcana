@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import './style.css';
+import Leaderboard from '../leaderboard';
 
 export default function MainPage() {
   useEffect(() => {
@@ -118,12 +119,21 @@ export default function MainPage() {
         </div>
       </div>
 
+
+
+
+{/*leaderboard start */}
       <div className="section3">
         <div className="section3-content">
           <h1>Leaderboard</h1>
-          <p>people with most amount of hours agagagag</p>
+          <Leaderboard />
         </div>
       </div>
+{/*leaderboard end */}
+
+
+
+
 
       <div className="section3">
         <div className="section3-content">

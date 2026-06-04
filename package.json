@@ -6,9 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "upload-csv": "node scripts/upload-csv.js"
   },
   "dependencies": {
+    "@slack/web-api": "^7.16.0",
+    "@vercel/blob": "^2.4.0",
+    "csv-parse": "^6.2.1",
+    "dotenv": "^17.4.2",
     "lenis": "^1.3.21",
     "next": "16.2.1",
     "react": "19.2.4",
