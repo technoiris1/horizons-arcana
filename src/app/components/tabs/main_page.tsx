@@ -123,9 +123,9 @@ export default function MainPage() {
 
 
 {/*leaderboard start */}
-      <div className="section3">
-        <div className="section3-content">
-          <h1>Leaderboard</h1>
+      <div className="section3 p-8">
+        <div className="section3-content flex flex-col items-center">
+          <h1 className="text-3xl font-bold text-center pt-8">Leaderboard</h1>
           <Leaderboard />
         </div>
       </div>

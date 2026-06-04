@@ -77,8 +77,15 @@ export default function Leaderboard() {
                 </div>
             )}
             </td>
-              <td className="username-cell"><Link href={`https://hackclub.enterprise.slack.com/team/${entry.slackId}`} target="_blank">{entry.displayName}</Link></td>
-              <td className="hours-cell">{entry.approvedHours.toFixed(1)} hrs</td>
+            <td className="username-cell">
+                <Link
+                href={`https://hackclub.enterprise.slack.com/team/${entry.slackId}`}
+                target="_blank"
+                className="!no-underline hover:!underline hover:!decoration-wavy text-inherit"
+                >
+                {entry.displayName}
+                </Link>
+            </td> <td className="hours-cell">{entry.approvedHours.toFixed(1)} hrs</td>
             </tr>
           ))}
         </tbody>
