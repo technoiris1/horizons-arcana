@@ -48,19 +48,19 @@ export default function Leaderboard() {
   }
 
   return (
-    <div className="leaderboard-container">
-      <table className="leaderboard-table">
-        <thead>
-          <tr>
-            <th>Rank</th>
+    <div className="leaderboard-container bg-amber-200">
+      <table className="leaderboard-table bg-blue-100">
+        <thead className="bg-blue-300">
+          <tr className="bg-[#1b3364] text-white">
+            <th className="text-white">Rank</th>
             <th></th>
             <th>Username</th>
             <th>Approved Hours</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="bg-[#d1f3ff] text-[#1b3364]">
           {leaderboard.map((entry, index) => (
-            <tr key={entry.slackId} className={`rank-${index + 1}`}>
+            <tr key={entry.slackId} className={`rank-${index + 1} text-[#1b3364]`}>
               <td className="rank-cell">
                 <span className="rank-number">#{index + 1}</span>
               </td>
