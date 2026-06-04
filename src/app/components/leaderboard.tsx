@@ -48,7 +48,7 @@ export default function Leaderboard() {
   }
 
   return (
-    <div className="leaderboard-container bg-amber-200">
+    <div className="leaderboard-container">
       <table className="leaderboard-table bg-blue-100">
         <thead className="bg-blue-300">
           <tr className="bg-[#1b3364] text-white">
