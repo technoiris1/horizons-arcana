@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 interface LeaderboardEntry {
@@ -64,18 +64,20 @@ export default function Leaderboard() {
               <td className="rank-cell">
                 <span className="rank-number">#{index + 1}</span>
               </td>
-              <td className="profile-cell">
-                {entry.profileImage ? (
-                  <img
-                    src={entry.profileImage}
-                    alt={entry.displayName}
-                    className="profile-image"
-                  />
-                ) : (
-                  <div className="profile-placeholder">{entry.displayName[0]}</div>
-                )}
-              </td>
-              <td className="username-cell">{entry.displayName}</td>
+            <td className="w-20">
+            {entry.profileImage ? (
+                <img
+                src={entry.profileImage}
+                alt={entry.displayName}
+                className="w-10 h-10 rounded-full object-cover border border-white/20"
+                />
+            ) : (
+                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-300 text-sm font-medium">
+                {entry.displayName[0]}
+                </div>
+            )}
+            </td>
+              <td className="username-cell"><Link href={`https://hackclub.enterprise.slack.com/team/${entry.slackId}`} target="_blank">{entry.displayName}</Link></td>
               <td className="hours-cell">{entry.approvedHours.toFixed(1)} hrs</td>
             </tr>
           ))}
