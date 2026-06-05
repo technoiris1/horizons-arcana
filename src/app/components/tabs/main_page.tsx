@@ -78,8 +78,8 @@ export default function MainPage() {
       <div className="section1">
         <section id="scroll-here">
           <div className="section1-content">
-            <h2>Welcome to Horizons Arcana!</h2>
-            <p>
+            <h2 className="text-3xl font-bold">Welcome to Horizons Arcana!</h2>
+            <p style={{ fontWeight: 400 }}>
               This July, 100+ students from all around the world will gather in Singapore for a 3-day long hackathon. Horizons Arcana is organised by <a href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">Hack Club</a>, a US-based 501(c)(3) nonprofit and network of 60,000 high school makers across the globe.
               <br/><br/>
               Food and accommodation will be provided—this hackathon is 100% free for all the attendees. Travel or flight stipends will be provided too! Our goal is to make this event accessible to everyone regardless of their financial or geographical background.
@@ -126,6 +126,7 @@ export default function MainPage() {
       <div className="section3 p-8">
         <div className="section3-content flex flex-col items-center">
           <h1 className="text-3xl font-bold text-center pt-8">Leaderboard</h1>
+          <p>People with most amount of shipped hours for Arcana :)</p>
           <Leaderboard />
         </div>
       </div>

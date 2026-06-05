@@ -711,19 +711,17 @@ a:hover{
     width: 100%;
     border-collapse: collapse;
     background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid #1b3465;
     border-radius: 12px;
     overflow: hidden;
 }
 
 .leaderboard-table thead {
-    background: rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(135, 92, 92, 0.05);
 }
 
 .leaderboard-table th {
     padding: 16px;
-    text-align: left;
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
@@ -733,6 +731,7 @@ a:hover{
 .leaderboard-table tbody tr {
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     transition: background-color 0.2s ease;
+    border:#1b3465 solid 1px;        
 }
 
 .leaderboard-table tbody tr:hover {

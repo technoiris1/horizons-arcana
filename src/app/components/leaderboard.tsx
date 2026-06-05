@@ -52,10 +52,10 @@ export default function Leaderboard() {
       <table className="leaderboard-table bg-blue-100">
         <thead className="bg-blue-300">
           <tr className="bg-[#1b3364] text-white">
-            <th className="text-white">Rank</th>
+            <th className="text-left">Rank</th>
             <th></th>
-            <th>Username</th>
-            <th>Approved Hours</th>
+            <th className="text-left">Username</th>
+            <th className="text-white text-right">Approved Hours</th>
           </tr>
         </thead>
         <tbody className="bg-[#d1f3ff] text-[#1b3364]">
@@ -81,7 +81,7 @@ export default function Leaderboard() {
                 <Link
                 href={`https://hackclub.enterprise.slack.com/team/${entry.slackId}`}
                 target="_blank"
-                className="!no-underline hover:!underline hover:!decoration-wavy text-inherit"
+                className="!no-underline hover:!underline hover:!decoration-wavy font-bold text-inherit"
                 >
                 {entry.displayName}
                 </Link>
