@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import './style.css';
 import Leaderboard from '../leaderboard';
-
+import Podium from '../podium';
 export default function MainPage() {
   useEffect(() => {
     // FAQ Toggle functionality
@@ -127,7 +127,7 @@ export default function MainPage() {
         <div className="section3-content flex flex-col items-center">
           <h1 className="text-3xl font-bold text-center pt-8">Leaderboard</h1>
           <p>People with most amount of shipped hours for Arcana :)</p>
-          <Leaderboard />
+          <Podium />
         </div>
       </div>
 {/*leaderboard end */}
