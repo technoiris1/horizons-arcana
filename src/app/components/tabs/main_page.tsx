@@ -1,46 +1,45 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './style.css';
 import Leaderboard from '../leaderboard';
 import Podium from '../podium';
+
 export default function MainPage() {
+  const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
+
   useEffect(() => {
-    // FAQ Toggle functionality
-    const items = document.querySelectorAll(".faq-item");
+    const items = document.querySelectorAll('.faq-item');
 
     items.forEach(item => {
-      const button = item.querySelector(".faq-toggle") as HTMLButtonElement;
-      const content = item.querySelector(".faq-content") as HTMLElement;
+      const button = item.querySelector('.faq-toggle') as HTMLButtonElement;
+      const content = item.querySelector('.faq-content') as HTMLElement;
 
-      // open first item on load
-      if (item.classList.contains("open") && content) {
-        content.style.height = content.scrollHeight + "px";
+      if (item.classList.contains('open') && content) {
+        content.style.height = content.scrollHeight + 'px';
       }
 
       if (button) {
-        button.addEventListener("click", () => {
-          // close others
+        button.addEventListener('click', () => {
           items.forEach(i => {
             if (i !== item) {
-              i.classList.remove("open");
-              const otherContent = i.querySelector(".faq-content") as HTMLElement;
+              i.classList.remove('open');
+              const otherContent = i.querySelector('.faq-content') as HTMLElement;
               if (otherContent) {
-                otherContent.style.height = "0";
+                otherContent.style.height = '0';
               }
             }
           });
 
-          // toggle current
-          if (item.classList.contains("open")) {
-            item.classList.remove("open");
+          if (item.classList.contains('open')) {
+            item.classList.remove('open');
             if (content) {
-              content.style.height = "0";
+              content.style.height = '0';
             }
           } else {
-            item.classList.add("open");
+            item.classList.add('open');
             if (content) {
-              content.style.height = content.scrollHeight + "px";
+              content.style.height = content.scrollHeight + 'px';
             }
           }
         });
@@ -49,12 +48,12 @@ export default function MainPage() {
   }, []);
 
   const scrollDown = () => {
-    const target = document.getElementById("scroll-here");
+    const target = document.getElementById('scroll-here');
     if (target) {
       const elementTop = target.offsetTop;
       window.scrollTo({
         top: elementTop - window.innerHeight * 0.37,
-        behavior: "smooth"
+        behavior: 'smooth'
       });
     }
   };
@@ -81,17 +80,17 @@ export default function MainPage() {
             <h2 className="text-3xl font-bold">Welcome to Horizons Arcana!</h2>
             <p style={{ fontWeight: 400 }}>
               This July, 100+ students from all around the world will gather in Singapore for a 3-day long hackathon. Horizons Arcana is organised by <a href="https://hackclub.com/" target="_blank" rel="noopener noreferrer">Hack Club</a>, a US-based 501(c)(3) nonprofit and network of 60,000 high school makers across the globe.
-              <br/><br/>
+              <br /><br />
               Food and accommodation will be provided—this hackathon is 100% free for all the attendees. Travel or flight stipends will be provided too! Our goal is to make this event accessible to everyone regardless of their financial or geographical background.
-              
+
               <div className="overglade-images">
                 <img src="/Assets/overglade1.webp" alt="overglade 1" />
                 <img src="/Assets/overglade2.webp" alt="overglade 2" />
                 <img src="/Assets/overglade3.webp" alt="overglade 3" />
               </div>
-            
+
               <i>^ Photos from Hack Club's <a href="https://overglade.hackclub.com/" target="_blank" rel="noopener noreferrer">Overglade</a>, a hackathon for 50 teens that took place in Singapore in January 2026.</i>
-              <br/><br/>
+              <br /><br />
               Horizons Arcana is part of <a href="https://horizons.hackclub.com/" target="_blank" rel="noopener noreferrer">Horizons</a>: a series of 7 Hack Club hackathons taking place all around the world. Arcana, taking place in Singapore, is the Horizons event for Asia.
             </p>
 
@@ -102,7 +101,7 @@ export default function MainPage() {
                 <li>Be of age 13-18 (inclusive) at the time of the event</li>
                 <li>Qualify by spending 35 hours total working on software/hardware projects to ship to the <a href="https://horizons.hackclub.com/" target="_blank" rel="noopener noreferrer">Horizons Platform</a></li>
               </ul>
-              <br/>
+              <br />
             </p>
           </div>
         </section>
@@ -115,116 +114,131 @@ export default function MainPage() {
           <a href="https://horizons.hackclub.com/" target="_blank" rel="noopener noreferrer">
             <img id="sign-up-button" src="/Assets/sign-up.webp" draggable="false" alt="sign up button" />
           </a>
-          <p id="pst">+ if you're already in the Hack Club<br/>Slack, join <a href="https://hackclub.enterprise.slack.com/archives/C0AKNMLG2P5" target="_blank" rel="noopener noreferrer">#horizons-arcana</a>!</p>
+          <p id="pst">+ if you're already in the Hack Club<br />Slack, join <a href="https://hackclub.enterprise.slack.com/archives/C0AKNMLG2P5" target="_blank" rel="noopener noreferrer">#horizons-arcana</a>!</p>
         </div>
       </div>
 
-
-
-
-{/*leaderboard start */}
       <div className="section3 p-8">
         <div className="section3-content flex flex-col items-center">
           <h1 className="text-3xl font-bold text-center pt-8">Leaderboard</h1>
           <p>People with most amount of shipped hours for Arcana :)</p>
           <Podium />
+          <button
+            type="button"
+            onClick={() => setIsLeaderboardOpen(true)}
+            className="mt-6 rounded-full border border-[#1b3364] bg-white px-5 py-2 text-sm font-bold text-[#1b3364] transition hover:bg-[#1b3364] hover:text-white"
+          >
+            Open full leaderboard
+          </button>
         </div>
       </div>
-{/*leaderboard end */}
 
-
-
-
+      {isLeaderboardOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 py-6 backdrop-blur-sm">
+          <div className="relative w-full max-w-5xl overflow-hidden rounded-3xl border border-white/20 bg-[#f4fbff] shadow-2xl">
+            <button
+              type="button"
+              aria-label="Close leaderboard"
+              onClick={() => setIsLeaderboardOpen(false)}
+              className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-2xl font-semibold text-[#1b3364] shadow-md transition hover:bg-white"
+            >
+              ×
+            </button>
+            <div className="max-h-[85vh] overflow-y-auto px-4 py-8 sm:px-8">
+              <Leaderboard />
+            </div>
+          </div>
+        </div>
+      )}
 
       <div className="section3">
         <div className="section3-content">
           <h1>Additional Information</h1>
           <div className="faq">
-            
             <div className="faq-item open">
               <button className="faq-toggle">
-              <span className="faq-title">About Hack Club</span>
-              <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
+                <span className="faq-title">About Hack Club</span>
+                <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
               </button>
               <div className="faq-content">
-              Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn to code and build projects. We're the largest teen-led coding community, with over 60,000 students building projects with their friends in Hack Club each year.
-              <br/><br/>
-              Some of the past events we've run include:
-              <ul>
-                <li><a href="https://overglade.hackclub.com/" target="_blank" rel="noopener noreferrer">Overglade</a>: A 4-day game jam in Singapore</li>
-                <li><a href="https://www.youtube.com/watch?v=fuTlToZ1SX8" target="_blank" rel="noopener noreferrer">Juice</a>: A 2-month game jam followed by a week-long popup cafe in Shanghai</li>
-                <li><a href="https://www.youtube.com/watch?v=kaEFv7e49mo" target="_blank" rel="noopener noreferrer">Undercity</a>: A 4-day hardware hackathon at Github HQ, in San Francisco</li>
-              </ul> 
-              
-              <div className="video-row">
-                <div className="video-wrapper">
-                  <iframe 
-                    src="https://www.youtube.com/embed/fuTlToZ1SX8"
-                    title="Video 1"
-                    frameBorder="0"
-                    allowFullScreen>
-                  </iframe>
+                Hack Club is a 501(c)(3) nonprofit (EIN: 81-2908499) that helps high school students learn to code and build projects. We're the largest teen-led coding community, with over 60,000 students building projects with their friends in Hack Club each year.
+                <br /><br />
+                Some of the past events we've run include:
+                <ul>
+                  <li><a href="https://overglade.hackclub.com/" target="_blank" rel="noopener noreferrer">Overglade</a>: A 4-day game jam in Singapore</li>
+                  <li><a href="https://www.youtube.com/watch?v=fuTlToZ1SX8" target="_blank" rel="noopener noreferrer">Juice</a>: A 2-month game jam followed by a week-long popup cafe in Shanghai</li>
+                  <li><a href="https://www.youtube.com/watch?v=kaEFv7e49mo" target="_blank" rel="noopener noreferrer">Undercity</a>: A 4-day hardware hackathon at Github HQ, in San Francisco</li>
+                </ul>
+
+                <div className="video-row">
+                  <div className="video-wrapper">
+                    <iframe
+                      src="https://www.youtube.com/embed/fuTlToZ1SX8"
+                      title="Video 1"
+                      frameBorder="0"
+                      allowFullScreen>
+                    </iframe>
+                  </div>
+
+                  <div className="video-wrapper">
+                    <iframe
+                      src="https://www.youtube.com/embed/kaEFv7e49mo"
+                      title="Video 2"
+                      frameBorder="0"
+                      allowFullScreen>
+                    </iframe>
+                  </div>
                 </div>
-
-                <div className="video-wrapper">
-                  <iframe 
-                    src="https://www.youtube.com/embed/kaEFv7e49mo"
-                    title="Video 2"
-                    frameBorder="0"
-                    allowFullScreen>
-                  </iframe>
-                </div>
-              </div>
               </div>
             </div>
 
             <div className="faq-item">
               <button className="faq-toggle">
-              <span className="faq-title">Event Details</span>
-              <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
+                <span className="faq-title">Event Details</span>
+                <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
               </button>
               <div className="faq-content">
-              Horizons Arcana is from July 31st-August 2nd 2026, and is happening in Singapore!
-              <br/><br/>
-              Additional information including the venue and schedule will be announced as we move closer to the event.
+                Horizons Arcana is from July 31st-August 2nd 2026, and is happening in Singapore!
+                <br /><br />
+                Additional information including the venue and schedule will be announced as we move closer to the event.
               </div>
             </div>
 
             <div className="faq-item">
               <button className="faq-toggle">
-              <span className="faq-title">Qualification</span>
-              <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
+                <span className="faq-title">Qualification</span>
+                <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
               </button>
               <div className="faq-content">
-              In order to qualify for Horizons Arcana, you'll need to spend 35 hours total working on projects to ship to the <a href="https://horizons.hackclub.com/" target="_blank" rel="noopener noreferrer">Horizons Platform</a>. Once they're reviewed and approved, you can purchase the ticket for the event from the Horizons shop.
-              <br/><br/>
-              Completing the 35 hours and purchasing the ticket from the Horizons shop guarantees you a spot at the event.
+                In order to qualify for Horizons Arcana, you'll need to spend 35 hours total working on projects to ship to the <a href="https://horizons.hackclub.com/" target="_blank" rel="noopener noreferrer">Horizons Platform</a>. Once they're reviewed and approved, you can purchase the ticket for the event from the Horizons shop.
+                <br /><br />
+                Completing the 35 hours and purchasing the ticket from the Horizons shop guarantees you a spot at the event.
               </div>
             </div>
 
             <div className="faq-item">
               <button className="faq-toggle">
-              <span className="faq-title">Travel</span>
-              <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
+                <span className="faq-title">Travel</span>
+                <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
               </button>
               <div className="faq-content">
-              <h3>1. Travel Stipends</h3>
-              We aim to make this event as accessible as possible. Travel stipends are available for purchase in the Horizons shop, at a rate of $8.5 for every approved hour. You may spend travel stipends on your flights, visas, or passports in order to attend Arcana.
-              <br/><br/>
-              <h3>2. Flying in and out of Singapore</h3>
-              Singapore has only one main airport—Changi Airport (SIN). You can request a staff pickup from the airport. If you do, staff will receive you and escort you to the venue. We'll release the staff pickup form as we move closer to the event. More details regarding when to fly in and out will be announced later as well.
+                <h3>1. Travel Stipends</h3>
+                We aim to make this event as accessible as possible. Travel stipends are available for purchase in the Horizons shop, at a rate of $8.5 for every approved hour. You may spend travel stipends on your flights, visas, or passports in order to attend Arcana.
+                <br /><br />
+                <h3>2. Flying in and out of Singapore</h3>
+                Singapore has only one main airport—Changi Airport (SIN). You can request a staff pickup from the airport. If you do, staff will receive you and escort you to the venue. We'll release the staff pickup form as we move closer to the event. More details regarding when to fly in and out will be announced later as well.
               </div>
             </div>
-            
+
             <div className="faq-item">
               <button className="faq-toggle">
-              <span className="faq-title">For Parents</span>
-              <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
+                <span className="faq-title">For Parents</span>
+                <span className="faq-icon"><img src="/Assets/x.webp" width="20" alt="toggle" draggable="false" /></span>
               </button>
               <div className="faq-content">
-              We understand that many parents are hesitant about sending their children to a different country. Your child's safety and well-being are our utmost priority. For details, please read our parents guide here. 
-              <br/><br/>
-              You can also book a parent call with the organisers if you have any questions. Please reach out to <a href="mailto:arcana@horizons.hackclub.com" target="_blank" rel="noopener noreferrer">arcana@horizons.hackclub.com</a>.
+                We understand that many parents are hesitant about sending their children to a different country. Your child's safety and well-being are our utmost priority. For details, please read our parents guide here.
+                <br /><br />
+                You can also book a parent call with the organisers if you have any questions. Please reach out to <a href="mailto:arcana@horizons.hackclub.com" target="_blank" rel="noopener noreferrer">arcana@horizons.hackclub.com</a>.
               </div>
             </div>
           </div>
@@ -234,9 +248,9 @@ export default function MainPage() {
       <div className="section4">
         <div className="footer-content">
           <h3>Made with ♥︎ by teenagers, for teenagers at Hack Club</h3>
-          
+
           We believe you learn best by building so we're creating community and providing grants so you can make awesome projects. In the past few years, we've <a href="https://summer.hackclub.com/" target="_blank" rel="noopener noreferrer">partnered with GitHub to run Summer of Making</a>, <a href="https://github.com/hackclub/the-hacker-zephyr" target="_blank" rel="noopener noreferrer">hosted the world's longest hackathon on land</a>, and <a href="https://www.youtube.com/watch?v=QvCoISXfcE8" target="_blank" rel="noopener noreferrer">ran Canada's largest high school hackathon</a>.
-          <br/><br/>
+          <br /><br />
           At Hack Club, students aren't just learning, they're shipping.
 
           <div className="footer-links">
@@ -264,7 +278,7 @@ export default function MainPage() {
             </div>
           </div>
         </div>
-        
+
         <img src="/Assets/footer.webp" className="footer-img" draggable="false" alt="footer" />
       </div>
     </>
