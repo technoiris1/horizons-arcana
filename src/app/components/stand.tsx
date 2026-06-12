@@ -16,13 +16,26 @@ const baseHeights: Record<number, string> = {
 
 function RankBadge({ rank }: { rank: number }) {
   return (
-    <div className="stand-rank-badge" aria-label={`Rank ${rank}`}>
-      <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="stand-rank-star">
+    <div className={`stand-rank-badge stand-rank-badge--${rank}`} aria-label={`Rank ${rank}`}>
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="stand-rank-shape" aria-hidden="true">
         <path
-          d="M28 3C28.8 16.5 36.2 24.8 53 27.5C36.2 30.2 28.8 39.5 28 53C27.2 39.5 19.8 30.2 3 27.5C19.8 24.8 27.2 16.5 28 3Z"
-          fill="#FFF0CA"
+          d="M24 5
+             C27 5 29.5 7 30.5 10
+             C33.5 8 37.5 9.5 38.5 13
+             C41 16 40 20 37.5 22.5
+             C40 25.5 41 29.5 38.5 33
+             C37.5 36.5 33.5 38 30.5 36
+             C29.5 39 27 41 24 41
+             C21 41 18.5 39 17.5 36
+             C14.5 38 10.5 36.5 9.5 33
+             C7 29.5 8 25.5 10.5 22.5
+             C8 20 7 16 9.5 13
+             C10.5 9.5 14.5 8 17.5 10
+             C18.5 7 21 5 24 5Z"
+          className="stand-rank-shape-fill"
           stroke="#1b3364"
-          strokeWidth="2.5"
+          strokeWidth="2"
+          strokeLinejoin="round"
         />
       </svg>
       <span className="stand-rank-number">#{rank}</span>
