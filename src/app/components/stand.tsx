@@ -1,8 +1,11 @@
+import Link from "next/link";
+
 interface StandProps {
   name: string;
   hours: number;
   profileImage?: string;
   rank: number;
+  slackId: string;
 }
 
 const baseHeights: Record<number, string> = {
@@ -27,7 +30,7 @@ function RankBadge({ rank }: { rank: number }) {
   );
 }
 
-export default function Stand({ name, hours, profileImage, rank }: StandProps) {
+export default function Stand({ name, hours, profileImage, rank, slackId }: StandProps) {
   const baseClass = baseHeights[rank] ?? baseHeights[3];
 
   return (
@@ -41,7 +44,7 @@ export default function Stand({ name, hours, profileImage, rank }: StandProps) {
         )}
       </div>
 
-      <p className="stand-name">{name}</p>
+      <p className="stand-name"><Link href={`https://hackclub.enterprise.slack.com/team/${slackId}`} target="_blank" rel="noopener noreferrer" className="!no-underline hover:!underline hover:!decoration-wavy font-bold text-inherit">{name}</Link></p>
 
       <div className={`stand-base ${baseClass}`}>
         <span className="stand-hours">{Math.round(hours)} hrs</span>

@@ -46,6 +46,7 @@ export default function Podium() {
               name={entry.displayName}
               hours={entry.approvedHours}
               profileImage={entry.profileImage}
+              slackId={entry.slackId}
             />
           );
         })}
