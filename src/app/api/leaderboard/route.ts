@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 import { parse } from 'csv-parse/sync';
-import { WebClient } from '@slack/web-api';
 import fs from 'fs';
 import path from 'path';
 
@@ -37,22 +36,6 @@ export async function GET() {
       .filter((entry: LeaderboardEntry) => entry.approvedHours > 0)
       .sort((a: LeaderboardEntry, b: LeaderboardEntry) => b.approvedHours - a.approvedHours)
       .slice(0, 15);
-
-
-    const slackToken = process.env.SLACK_BOT_TOKEN;
-    
-    if (slackToken) {
-      const client = new WebClient(slackToken);
-      
-      for (const entry of leaderboard) {
-        try {
-          const userInfo = await client.users.info({ user: entry.slackId });
-          entry.profileImage = userInfo.user?.profile?.image_72;
-        } catch (error) {
-          console.error(`Failed to fetch profile for ${entry.slackId}:`, error);
-        }
-      }
-    }
 
     return NextResponse.json(leaderboard);
   } catch (error) {

@@ -9,6 +9,22 @@ export default function MainPage() {
   const [isLeaderboardOpen, setIsLeaderboardOpen] = useState(false);
 
   useEffect(() => {
+    if (!isLeaderboardOpen) return;
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setIsLeaderboardOpen(false);
+    };
+
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isLeaderboardOpen]);
+
+  useEffect(() => {
     const items = document.querySelectorAll('.faq-item');
 
     items.forEach(item => {
@@ -126,7 +142,7 @@ export default function MainPage() {
           <button
             type="button"
             onClick={() => setIsLeaderboardOpen(true)}
-            className="mt-6 rounded-full border border-[#1b3364] bg-white px-5 py-2 text-sm font-bold text-[#1b3364] transition hover:bg-[#1b3364] hover:text-white"
+            className="leaderboard-open-btn"
           >
             Open full leaderboard
           </button>
@@ -134,17 +150,27 @@ export default function MainPage() {
       </div>
 
       {isLeaderboardOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4 py-6 backdrop-blur-sm">
-          <div className="relative w-full max-w-5xl overflow-hidden rounded-3xl border border-white/20 bg-[#f4fbff] shadow-2xl">
+        <div
+          className="leaderboard-overlay"
+          onClick={() => setIsLeaderboardOpen(false)}
+          role="presentation"
+        >
+          <div
+            className="leaderboard-modal"
+            onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-label="Full leaderboard"
+          >
             <button
               type="button"
               aria-label="Close leaderboard"
               onClick={() => setIsLeaderboardOpen(false)}
-              className="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-2xl font-semibold text-[#1b3364] shadow-md transition hover:bg-white"
+              className="leaderboard-modal-close"
             >
               ×
             </button>
-            <div className="max-h-[85vh] overflow-y-auto px-4 py-8 sm:px-8">
+            <div className="leaderboard-modal-content">
               <Leaderboard />
             </div>
           </div>
