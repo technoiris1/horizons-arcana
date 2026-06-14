@@ -170,7 +170,7 @@ export default function MainPage() {
             >
               ×
             </button>
-            <div className="leaderboard-modal-content">
+            <div className="leaderboard-modal-content bg-[url(/Assets/lb_bg.png)]">
               <Leaderboard />
             </div>
           </div>
