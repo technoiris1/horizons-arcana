@@ -151,30 +151,38 @@ export default function MainPage() {
 
       {isLeaderboardOpen && (
         <div
-          className="leaderboard-overlay"
-          onClick={() => setIsLeaderboardOpen(false)}
-          role="presentation"
-        >
-          <div
-            className="leaderboard-modal"
-            onClick={(e) => e.stopPropagation()}
-            role="dialog"
-            aria-modal="true"
-            aria-label="Full leaderboard"
-          >
-            <button
-              type="button"
-              aria-label="Close leaderboard"
-              onClick={() => setIsLeaderboardOpen(false)}
-              className="leaderboard-modal-close"
-            >
-              ×
-            </button>
-            <div className="leaderboard-modal-content bg-[url(/Assets/lb_bg.png)]">
-              <Leaderboard />
-            </div>
-          </div>
-        </div>
+  className="leaderboard-overlay"
+  onClick={() => setIsLeaderboardOpen(false)}
+  role="presentation"
+>
+  <div
+    className="leaderboard-modal"
+    onClick={(e) => e.stopPropagation()}
+    role="dialog"
+    aria-modal="true"
+    aria-label="Full leaderboard"
+  >
+    <button
+      type="button"
+      aria-label="Close leaderboard"
+      onClick={() => setIsLeaderboardOpen(false)}
+      className="leaderboard-modal-close"
+    >
+      ×
+    </button>
+
+    <div className="leaderboard-modal-content bg-[url(/Assets/lb_bg.png)] relative flex flex-col items-center">
+    <img
+        src="/Assets/favicon.png"
+        alt="Logo"
+        className="w-16 h-16 mt-4 mb-2 z-10"
+      />
+      <div className="w-full">
+        <Leaderboard />
+      </div>
+    </div>
+  </div>
+</div>
       )}
 
       <div className="section3">
