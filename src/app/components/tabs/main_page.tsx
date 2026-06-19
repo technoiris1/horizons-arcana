@@ -123,16 +123,47 @@ export default function MainPage() {
         </section>
       </div>
 
-      <div className="section2">
-        <div className="section2-content">
-          <h1>Ready to dive into Arcana?</h1>
-          <p>Sign up and start making projects on the Horizons platform!</p>
-          <a href="https://horizons.hackclub.com/" target="_blank" rel="noopener noreferrer">
-            <img id="sign-up-button" src="/Assets/sign-up.webp" draggable="false" alt="sign up button" />
-          </a>
-          <p id="pst">+ if you're already in the Hack Club<br />Slack, join <a href="https://hackclub.enterprise.slack.com/archives/C0AKNMLG2P5" target="_blank" rel="noopener noreferrer">#horizons-arcana</a>!</p>
-        </div>
-      </div>
+
+
+      <div className="section2 py-12">
+  <div className="section2-content flex flex-col items-center gap-2">
+    <h1 className="text-3xl font-bold text-center">
+      Ready to dive into Arcana?
+    </h1>
+
+    <p className='text-center' style={{fontWeight: 550}}>Sign up and start making projects on the Horizons platform!</p>
+
+    <a
+      href="https://horizons.hackclub.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
+        id="sign-up-button"
+        src="/Assets/sign-up.webp"
+        draggable="false"
+        alt="sign up button"
+      />
+    </a>
+
+    <p id="pst" className="text-center">
+      + if you're already in the Hack Club
+      <br />
+      Slack, join{" "}
+      <a
+        href="https://hackclub.enterprise.slack.com/archives/C0AKNMLG2P5"
+        target="_blank"
+        rel="noopener noreferrer"
+        className='hover:underline'
+      >
+        #horizons-arcana
+      </a>
+      !
+    </p>
+  </div>
+</div>
+
+
 
       <div className="section3 p-8">
         <div className="section3-content flex flex-col items-center">

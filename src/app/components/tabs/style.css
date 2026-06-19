@@ -359,6 +359,7 @@ h2{
 
 .section2 p{
     margin-top: 0px;
+
 }
 
 
@@ -697,7 +698,8 @@ a{
 }
 
 a:hover{
-    text-decoration: none;
+    text-decoration: underline wavy;
+    
 }
 
 .podium-container {
